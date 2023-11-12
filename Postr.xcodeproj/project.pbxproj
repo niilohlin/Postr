@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C87F448B2B010A5900C1E3CE /* PostrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F448A2B010A5900C1E3CE /* PostrApp.swift */; };
-		C87F448D2B010A5900C1E3CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F448C2B010A5900C1E3CE /* ContentView.swift */; };
 		C87F448F2B010A5A00C1E3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C87F448E2B010A5A00C1E3CE /* Assets.xcassets */; };
 		C87F44922B010A5A00C1E3CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C87F44912B010A5A00C1E3CE /* Preview Assets.xcassets */; };
-		C87F449C2B010A5A00C1E3CE /* PostrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F449B2B010A5A00C1E3CE /* PostrTests.swift */; };
 		C87F44A62B010A5A00C1E3CE /* PostrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F44A52B010A5A00C1E3CE /* PostrUITests.swift */; };
 		C87F44A82B010A5A00C1E3CE /* PostrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F44A72B010A5A00C1E3CE /* PostrUITestsLaunchTests.swift */; };
+		C87F44B52B010A8200C1E3CE /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F44B42B010A8200C1E3CE /* ApiClient.swift */; };
+		C87F44B72B010A8700C1E3CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F44B62B010A8700C1E3CE /* ContentView.swift */; };
+		C87F44B92B010A8B00C1E3CE /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F44B82B010A8B00C1E3CE /* Identifier.swift */; };
+		C87F44BB2B010A9300C1E3CE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F44BA2B010A9300C1E3CE /* Post.swift */; };
+		C87F44BD2B010A9700C1E3CE /* PostrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F44BC2B010A9700C1E3CE /* PostrApp.swift */; };
+		C87F44BF2B010A9B00C1E3CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F44BE2B010A9B00C1E3CE /* User.swift */; };
+		C87F44C12B010AC100C1E3CE /* PostrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F44C02B010AC100C1E3CE /* PostrTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +39,19 @@
 
 /* Begin PBXFileReference section */
 		C87F44872B010A5900C1E3CE /* Postr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Postr.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C87F448A2B010A5900C1E3CE /* PostrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostrApp.swift; sourceTree = "<group>"; };
-		C87F448C2B010A5900C1E3CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C87F448E2B010A5A00C1E3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C87F44912B010A5A00C1E3CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C87F44972B010A5A00C1E3CE /* PostrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C87F449B2B010A5A00C1E3CE /* PostrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostrTests.swift; sourceTree = "<group>"; };
 		C87F44A12B010A5A00C1E3CE /* PostrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87F44A52B010A5A00C1E3CE /* PostrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostrUITests.swift; sourceTree = "<group>"; };
 		C87F44A72B010A5A00C1E3CE /* PostrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostrUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C87F44B42B010A8200C1E3CE /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		C87F44B62B010A8700C1E3CE /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../Postr2/Postr/ContentView.swift; sourceTree = "<group>"; };
+		C87F44B82B010A8B00C1E3CE /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		C87F44BA2B010A9300C1E3CE /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C87F44BC2B010A9700C1E3CE /* PostrApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostrApp.swift; path = ../../Postr2/Postr/PostrApp.swift; sourceTree = "<group>"; };
+		C87F44BE2B010A9B00C1E3CE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C87F44C02B010AC100C1E3CE /* PostrTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostrTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,12 @@
 		C87F44892B010A5900C1E3CE /* Postr */ = {
 			isa = PBXGroup;
 			children = (
-				C87F448A2B010A5900C1E3CE /* PostrApp.swift */,
-				C87F448C2B010A5900C1E3CE /* ContentView.swift */,
+				C87F44B42B010A8200C1E3CE /* ApiClient.swift */,
+				C87F44B82B010A8B00C1E3CE /* Identifier.swift */,
+				C87F44BE2B010A9B00C1E3CE /* User.swift */,
+				C87F44B62B010A8700C1E3CE /* ContentView.swift */,
+				C87F44BC2B010A9700C1E3CE /* PostrApp.swift */,
+				C87F44BA2B010A9300C1E3CE /* Post.swift */,
 				C87F448E2B010A5A00C1E3CE /* Assets.xcassets */,
 				C87F44902B010A5A00C1E3CE /* Preview Content */,
 			);
@@ -113,7 +125,7 @@
 		C87F449A2B010A5A00C1E3CE /* PostrTests */ = {
 			isa = PBXGroup;
 			children = (
-				C87F449B2B010A5A00C1E3CE /* PostrTests.swift */,
+				C87F44C02B010AC100C1E3CE /* PostrTests.swift */,
 			);
 			path = PostrTests;
 			sourceTree = "<group>";
@@ -198,6 +210,7 @@
 					};
 					C87F44962B010A5A00C1E3CE = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 						TestTargetID = C87F44862B010A5900C1E3CE;
 					};
 					C87F44A02B010A5A00C1E3CE = {
@@ -257,8 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C87F448D2B010A5900C1E3CE /* ContentView.swift in Sources */,
-				C87F448B2B010A5900C1E3CE /* PostrApp.swift in Sources */,
+				C87F44B92B010A8B00C1E3CE /* Identifier.swift in Sources */,
+				C87F44BB2B010A9300C1E3CE /* Post.swift in Sources */,
+				C87F44BF2B010A9B00C1E3CE /* User.swift in Sources */,
+				C87F44BD2B010A9700C1E3CE /* PostrApp.swift in Sources */,
+				C87F44B72B010A8700C1E3CE /* ContentView.swift in Sources */,
+				C87F44B52B010A8200C1E3CE /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C87F449C2B010A5A00C1E3CE /* PostrTests.swift in Sources */,
+				C87F44C12B010AC100C1E3CE /* PostrTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +494,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8JRRF53SL5;
@@ -486,6 +504,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = niilohlin.PostrTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Postr.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Postr";
@@ -497,6 +516,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8JRRF53SL5;

@@ -1,36 +1,46 @@
-//
-//  PostrTests.swift
-//  PostrTests
-//
-//  Created by Niil Öhlin on 2023-11-12.
-//
-
 import XCTest
 @testable import Postr
 
+@MainActor
 final class PostrTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testParsing() async throws {
+
+        let apiClient = ApiClient(getData: { _ in
+            (#"""
+            [
+                {
+                    "userId": 1,
+                    "id": 0,
+                    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+                    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+                }
+            ]
+            """#.data(using: .utf8)!, HTTPURLResponse(url: URL(filePath: "/"), statusCode: 200, httpVersion: nil, headerFields: nil)! as URLResponse)
+        }, api: .production)
+
+        let viewModel = ContentView.ViewModel(apiClient: apiClient, posts: [])
+        try await viewModel.onAppear().value
+        XCTAssertEqual(viewModel.posts.count, 1)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    func testFiltersIdOver50() async throws {
+        let apiClient = ApiClient(getData: { _ in
+            (#"""
+            [
+                {
+                    "userId": 1,
+                    "id": 50,
+                    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+                    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+                }
+            ]
+            """#.data(using: .utf8)!, HTTPURLResponse(url: URL(filePath: "/"), statusCode: 200, httpVersion: nil, headerFields: nil)! as URLResponse)
+        }, api: .production)
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        let viewModel = ContentView.ViewModel(apiClient: apiClient, posts: [])
+        try await viewModel.onAppear().value
+        XCTAssertEqual(viewModel.posts.count, 0)
     }
 
 }
