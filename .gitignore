@@ -1,0 +1,55 @@
+
+# SwiftPackageManager
+.build/
+xcuserdata
+DerivedData/
+SourcePackages/
+Packages/Package.resolved
+
+## Metadata files
+**/.DS_Store
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+## Fastlane
+fastlane/report.xml
+fastlane/README.md
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+fastlane/.env.default
+fastlane/xcov_output
+build/
+
+xcov_output/*
+
+testresults/*
+
+# Bundler
+.bundle/
+vendor/
+
+# Python
+*.pyc
+
+# Secrets
+.env.xcconfig
+.development-env.xcconfig
+.production-env.xcconfig
+Secrets.swift
+
+# Other
+.skip-swiftlint
+output
+.idea
+
+.ctags
+tags
